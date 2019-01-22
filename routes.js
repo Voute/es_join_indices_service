@@ -14,7 +14,7 @@ var indexCommand = {
     index:  { _index: null, _type: null }
 }
 
-var appRouter = function (app) {
+function appRouter(app) {
     app.post('/test', function(req, res) {
         console.log('post test request is recieved');
         console.log(req.body.field1);
